@@ -42,10 +42,6 @@ public class MainFrame extends javax.swing.JFrame {
         background = new javax.swing.JPanel();
         frameC1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        resultTimeBefore = new javax.swing.JLabel();
-        resultNameBefore = new javax.swing.JLabel();
-        resultImgBefore = new javax.swing.JLabel();
         inputDay = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         inputMonth = new javax.swing.JTextField();
@@ -56,10 +52,6 @@ public class MainFrame extends javax.swing.JFrame {
         resultName = new javax.swing.JLabel();
         resultTime = new javax.swing.JLabel();
         resultImg = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        resultNameAfter = new javax.swing.JLabel();
-        resultTimeAfter = new javax.swing.JLabel();
-        resultImgAfter = new javax.swing.JLabel();
         frameC3 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -100,46 +92,6 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(59, 59, 59));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Mời nhập...");
-
-        jPanel1.setBackground(new java.awt.Color(243, 243, 243));
-        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanel1.setToolTipText("Nơi hiện thị kết quả");
-
-        resultTimeBefore.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        resultTimeBefore.setForeground(new java.awt.Color(59, 59, 59));
-        resultTimeBefore.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        resultTimeBefore.setText(" ");
-
-        resultNameBefore.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        resultNameBefore.setForeground(new java.awt.Color(59, 59, 59));
-        resultNameBefore.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        resultNameBefore.setText(" ");
-
-        resultImgBefore.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(7, 7, 7)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(resultNameBefore, javax.swing.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE)
-                    .addComponent(resultTimeBefore, javax.swing.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE)
-                    .addComponent(resultImgBefore, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(resultImgBefore, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(resultNameBefore)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(resultTimeBefore)
-                .addContainerGap())
-        );
 
         inputDay.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         inputDay.setForeground(new java.awt.Color(59, 59, 59));
@@ -209,52 +161,11 @@ public class MainFrame extends javax.swing.JFrame {
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(resultImg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(resultImg, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(resultName)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(resultTime)
-                .addContainerGap())
-        );
-
-        jPanel3.setBackground(new java.awt.Color(243, 243, 243));
-        jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanel3.setToolTipText("Nơi hiện thị kết quả");
-        jPanel3.setPreferredSize(new java.awt.Dimension(166, 177));
-
-        resultNameAfter.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        resultNameAfter.setForeground(new java.awt.Color(59, 59, 59));
-        resultNameAfter.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        resultNameAfter.setText(" ");
-
-        resultTimeAfter.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        resultTimeAfter.setForeground(new java.awt.Color(59, 59, 59));
-        resultTimeAfter.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        resultTimeAfter.setText(" ");
-
-        resultImgAfter.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(resultImgAfter, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(resultNameAfter, javax.swing.GroupLayout.DEFAULT_SIZE, 136, Short.MAX_VALUE)
-                    .addComponent(resultTimeAfter, javax.swing.GroupLayout.DEFAULT_SIZE, 136, Short.MAX_VALUE))
-                .addGap(7, 7, 7))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(resultImgAfter, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(resultNameAfter)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(resultTimeAfter)
                 .addContainerGap())
         );
 
@@ -270,11 +181,9 @@ public class MainFrame extends javax.swing.JFrame {
                             .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(frameC1Layout.createSequentialGroup()
-                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGap(168, 168, 168)
                                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 153, Short.MAX_VALUE)))
+                                .addGap(0, 0, Short.MAX_VALUE)))
                         .addContainerGap())
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, frameC1Layout.createSequentialGroup()
                         .addGap(0, 122, Short.MAX_VALUE)
@@ -314,10 +223,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(frameC1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -593,9 +499,7 @@ public class MainFrame extends javax.swing.JFrame {
         if(run) {
             int day = Integer.parseInt(inputDay.getText());
             int month = Integer.parseInt(inputMonth.getText());
-            ArrayList<CungHD> result = new ArrayList<CungHD>();
-            ArrayList<CungHD> resultBefore = new ArrayList<CungHD>();
-            ArrayList<CungHD> resultAfter = new ArrayList<CungHD>();
+            ArrayList<CungHD> result = new ArrayList<>();
 
             // Lấy ra 2 Cung trùng với tháng nhập
             for (CungHD i : ListCHD) {
@@ -610,48 +514,20 @@ public class MainFrame extends javax.swing.JFrame {
             result.sort((x, y) -> x.getMonthStart() == y.getMonthEnd() ? 1 : -1);
 
             // Trả về Cung có khoảng phù hợp với thời gian nhập
-            // Nếu Cung1 có tháng_bắt_đầu != tháng_nhập và ngày_kết_thúc <= ngày_nhập
+            // Nếu Cung1 có ngày_nhập <= ngày_kết_thúc
             // thì lấy Cung1 hoặc không thì lấy Cung2
-            if (day <= result.get(0).getDayEnd()) {
-                showResult(result, 0);
-            } else {
-                showResult(result, 1);
-            }
+            showResult(result, day <= result.get(0).getDayEnd() ? 0 : 1);
         }
     }//GEN-LAST:event_btnSearchActionPerformed
     
     // In ra tên và thời gian của Cung trong khoảng thời gian nhập
-    // 2 Cung trái và phải bị thừa do đọc nhầm đề :P
     private void showResult(ArrayList<CungHD> list, int index) {
         int tempIndex = list.get(index).getId();
-//        System.out.println(tempIndex);
-        
-        // Thừa đến hết if else
-        ArrayList<CungHD> temp = new ArrayList<CungHD>();
-        if(list.get(index).getId() - 1 == -1) {
-            temp.add(ListCHD.get(11));
-        } else {
-            temp.add(ListCHD.get(tempIndex - 1));
-        }
-        if(list.get(index).getId() + 1 == 12) {
-            temp.add(ListCHD.get(0));
-        } else {
-            temp.add(ListCHD.get(tempIndex + 1));
-        }
 
-        // Thừa 2 dòng dưới
-        resultImgBefore.setIcon(genImg(temp, temp.get(0).getId()));
-        resultNameBefore.setText(genName(temp, 0));
-        resultTimeBefore.setText(genDate(temp, 0));
-
-        resultImg.setIcon(genImg(list, ListCHD.get(tempIndex).getId()));
+        // Đẩy dữ liệu ra
+        resultImg.setIcon(genImg(ListCHD.get(tempIndex).getId()));
         resultName.setText(genName(list, index));
         resultTime.setText(genDate(list, index));
-
-        // Thừa 2 dòng dưới
-        resultImgAfter.setIcon(genImg(temp, temp.get(1).getId()));
-        resultNameAfter.setText(genName(temp, 1));
-        resultTimeAfter.setText(genDate(temp, 1));
     }
     
     // Load danh sách Cung lên ComboBox
@@ -662,12 +538,12 @@ public class MainFrame extends javax.swing.JFrame {
         // comboBox.setSelectedIndex(-1);
     }
 
-    // Chọn Cung nào thì hiện cung đấy ở giữa
+    // Cung được chọn sẽ hiện ở giữa
     // Bên trái là Cung trước và phải là cung sau
     private void comboBoxItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_comboBoxItemStateChanged
         int index = comboBox.getSelectedIndex();
-        int indexBefore = comboBox.getSelectedIndex() - 1;
-        int indexAfter = comboBox.getSelectedIndex() + 1;
+        int indexBefore = index - 1;
+        int indexAfter = index + 1;
         
         // Chọn lại index cho Cung đầu quay về Cung cuối trong danh sách
         if(indexBefore == -1) {
@@ -680,23 +556,22 @@ public class MainFrame extends javax.swing.JFrame {
         }
         
         // Đẩy dữ liệu ra
-        resultImgBefore3.setIcon(genImg(ListCHD, indexBefore));
+        resultImgBefore3.setIcon(genImg(indexBefore));
         resultNameBefore3.setText(genName(ListCHD, indexBefore));
         resultTimeBefore3.setText(genDate(ListCHD, indexBefore));
         
-        resultImg3.setIcon(genImg(ListCHD, index));
+        resultImg3.setIcon(genImg(index));
         resultName3.setText(genName(ListCHD, index));
         resultTime3.setText(genDate(ListCHD, index));
         
-        resultImgAfter3.setIcon(genImg(ListCHD, indexAfter));
+        resultImgAfter3.setIcon(genImg(indexAfter));
         resultNameAfter3.setText(genName(ListCHD, indexAfter));
         resultTimeAfter3.setText(genDate(ListCHD, indexAfter));
     }//GEN-LAST:event_comboBoxItemStateChanged
 
     // Lấy ảnh Cung
-    private ImageIcon genImg(ArrayList<CungHD> list, int index) {
-        // Giải thích cái này hơi phức tạp...
-        // Tóm lại mục đích chính là để sửa lại kích thước ảnh hiện thị
+    private ImageIcon genImg(int index) {
+        // Sửa lại kích thước ảnh và hiển thị ảnh
         BufferedImage img = null;
         try {
             img = ImageIO.read(new File("src/de_1_java/img/" + index + ".png"));
@@ -708,6 +583,7 @@ public class MainFrame extends javax.swing.JFrame {
         ImageIcon icon = new ImageIcon(dimg);
         return icon;
     }
+    
     // Lấy tên Cung
     private String genName(ArrayList<CungHD> list, int index) {
         return list.get(index).getName();
@@ -722,86 +598,39 @@ public class MainFrame extends javax.swing.JFrame {
     private boolean check() {
         int day = Integer.parseInt(inputDay.getText());
         int month = Integer.parseInt(inputMonth.getText());
+        
         if(month < 1 || month > 12) {
             JOptionPane.showMessageDialog(null,"1 năm chỉ có 12 tháng và bắt đầu từ tháng 1","Cảnh báo",JOptionPane.WARNING_MESSAGE);
             return false;
         } else {
             switch(month) {
-                case 1:
-                case 3:
-                case 5:
-                case 7:
-                case 8:
-                case 10:
-                case 12:
+                case 1, 3, 5, 7, 8, 10, 12 -> {
                     if(day < 1 || day > 31) {
                         JOptionPane.showMessageDialog(null,"Tháng " + month + " chỉ có 31 ngày và bắt đầu từ ngày 1","Cảnh báo",JOptionPane.WARNING_MESSAGE);
                         return false;
                     }
-                    break;
-                case 4:
-                case 6:
-                case 9:
-                case 11:
+                }
+                case 4, 6, 9, 11 -> {
                     if(day < 1 || day > 30) {
                         JOptionPane.showMessageDialog(null,"Tháng " + month + " chỉ có 30 ngày và bắt đầu từ ngày 1","Cảnh báo",JOptionPane.WARNING_MESSAGE);
                         return false;
                     }
-                    break;
-                default:
+                }
+                default -> {
                     if(day < 1 || day > 29) {
                         JOptionPane.showMessageDialog(null,"Tháng " + month + " chỉ có 28 ngày (năm nhuận thì 29 ngày) và bắt đầu từ ngày 1","Cảnh báo",JOptionPane.WARNING_MESSAGE);
                         return false;
                     }
-                    break;
+                }
             }
             return true;
         }
-            
     }
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MainFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MainFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MainFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MainFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -825,29 +654,21 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JLabel resultImg;
     private javax.swing.JLabel resultImg3;
-    private javax.swing.JLabel resultImgAfter;
     private javax.swing.JLabel resultImgAfter3;
-    private javax.swing.JLabel resultImgBefore;
     private javax.swing.JLabel resultImgBefore3;
     private javax.swing.JLabel resultName;
     private javax.swing.JLabel resultName3;
-    private javax.swing.JLabel resultNameAfter;
     private javax.swing.JLabel resultNameAfter3;
-    private javax.swing.JLabel resultNameBefore;
     private javax.swing.JLabel resultNameBefore3;
     private javax.swing.JLabel resultTime;
     private javax.swing.JLabel resultTime3;
-    private javax.swing.JLabel resultTimeAfter;
     private javax.swing.JLabel resultTimeAfter3;
-    private javax.swing.JLabel resultTimeBefore;
     private javax.swing.JLabel resultTimeBefore3;
     // End of variables declaration//GEN-END:variables
 }
